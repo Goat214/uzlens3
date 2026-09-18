@@ -62,7 +62,7 @@ function buildRecent(a: AnalysisRow[], o: OcrDocumentRow[], w: WordSearchHistory
 }
 
 export default function Dashboard() {
-  const { user, loading: authLoading } = useAuth()
+  const { user } = useAuth()
 
   // Guest (local) stats
   const [localStats, setLocalStats] = useState<UzlensStats | null>(null)
